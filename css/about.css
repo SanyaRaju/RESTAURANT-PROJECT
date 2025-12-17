@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0F0F1A;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+/* ----------- NAVBAR ----------- */
+.main-nav {
+    background-color: #1A1A2E;
+    padding: 15px 0;
+}
+
+.logo-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.brand {
+    color: #E4A11B;
+    font-family: "Playfair Display", serif;
+    font-size: 22px;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff;
+    transition: 0.3s;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #E4A11B;
+}
+
+.login-btn {
+    background-color: #E4A11B;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    color: #1A1A2E;
+    font-weight: bold;
+}
+
+/* ----------- ABOUT HERO ----------- */
+.about-hero {
+    height: 70vh;
+    background-image: linear-gradient(rgba(45,45,91,0.7), rgba(45,45,91,0.7)),
+                      url('../images/About us.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.about-hero h1 {
+    font-size: 52px;
+    font-family: 'Playfair Display', serif;
+}
+
+.about-hero p {
+    font-size: 22px;
+    color: #E4A11B;
+    margin-top: 10px;
+}
+
+/* ----------- JOURNEY SECTION ----------- */
+.journey-section {
+    background-color: black;
+    padding: 70px 0;
+}
+
+.journey-title {
+    color: #E4A11B;
+    font-family: 'Playfair Display', serif;
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+.journey-text {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #ffffff;
+}
+
+.journey-img {
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+}
+
+/* ----------- RESPONSIVE ----------- */
+@media (max-width: 768px) {
+    .about-hero h1 {
+        font-size: 40px;
+    }
+
+    .journey-title {
+        text-align: center;
+    }
+
+    .journey-text {
+        text-align: center;
+    }
+}
+/* -------- JOURNEY ANIMATION -------- */
+.journey-left,
+.journey-right {
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.journey-left {
+    transform: translateX(-60px);
+}
+
+.journey-right {
+    transform: translateX(60px);
+}
+
+.journey-show .journey-left,
+.journey-show .journey-right {
+    opacity: 1;
+    transform: translateX(0);
+}
+/* Titles */
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    color: #c9c9c9;
+    font-size: 18px;
+}
+
+/* VALUES */
+.values-section {
+    padding: 80px 0;
+    background: #000;
+}
+.values-section h2{
+    color: #E4A11B;
+}
+.value-card {
+    background: white;
+    color: #1a1a2e;
+    border-radius: 25px;
+    padding: 50px 20px;
+    transition: 0.3s;
+}
+
+.value-card:hover {
+    transform: translateY(-8px);
+}
+
+.value-card .icon {
+    width: 60px;
+    height: 60px;
+    background: #f5f1e8;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    font-size: 24px;
+}
+
+/* COUNTERS */
+.counter-section {
+    background: #1f1109;
+    padding: 50px 0;
+}
+
+.counter-section h2 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.counter-section p {
+    font-size: 18px;
+    color: #E4A11B;
+}
+
+/* AWARDS */
+.awards-section {
+    background: #ebdcb4;
+    padding: 80px 0;
+    color: #1a1a2e;
+}
+.awards-section p{
+    color: #12124f;
+}
+.award-card {
+    background: white;
+    border-radius: 25px;
+    padding: 40px 20px;
+    height: 100%;
+    transition: 0.3s;
+}
+
+.award-card:hover {
+    transform: translateY(-6px);
+}
+
+.award-card i {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.award-card span {
+    font-weight: bold;
+    color: #8a5a3b;
+}
+/* ===== VALUES POP ===== */
+.value-card {
+    opacity: 0;
+    transform: scale(0.85);
+    transition: all 0.6s ease;
+}
+
+.value-show {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* ===== AWARDS POP ===== */
+.award-card {
+    opacity: 0;
+    transform: translateY(30px) scale(0.9);
+    transition: all 0.6s ease;
+}
+
+.award-show {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+.footer-bottom {
+    text-align: center;
+    padding: 20px;
+    background: #0F0F0F;
+    color: rgb(231, 180, 53);
+}

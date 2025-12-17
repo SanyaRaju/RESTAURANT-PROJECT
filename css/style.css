@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0F0F1A;
+    font-family: Arial, sans-serif;
+    color: white;
+    overflow-x: hidden;
+}
+
+/* ---------------- NAVBAR ---------------- */
+.navbar {
+    padding: 15px 0;
+    background-color: #1A1A2E;
+}
+
+.logo-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.brand {
+    color: #E4A11B;
+    font-family: "Playfair Display", serif;
+    font-size: 22px;
+}
+
+.navbar-nav .nav-link {
+    color: #FFFFFF;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #E4A11B;
+}
+
+.login-btn {
+    background-color: #E4A11B;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    color: #1A1A2E;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #D19715;
+}
+
+/* ---------------- HERO SECTION ---------------- */
+.hero {
+    background-image: linear-gradient(rgba(45,45,91,0.7), rgba(45,45,91,0.7)),
+                      url('../images/Restaurent bg img.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 52px;
+    font-family: 'Playfair Display', serif;
+    color: white;
+}
+
+.hero p {
+    font-size: 22px;
+    margin-top: -10px;
+    color: #E4A11B;
+}
+
+.hero-buttons button {
+    padding: 14px 30px;
+    background: #E4A11B;
+    border: none;
+    border-radius: 8px;
+    color: #1A1A2E;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero-buttons button:hover {
+    background: #D19715;
+}
+
+/* ---------------- OPENING HOURS ---------------- */
+.opening-section {
+    padding: 80px 0;
+}
+
+.opening-img {
+    border-radius: 12px;
+    width: 100%;
+}
+
+.opening-section h2 {
+    color: #E4A11B;
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+}
+
+/* ---------------- COUNTERS ---------------- */
+.counters {
+    background-color: #16213E;
+    padding: 60px 0;
+}
+
+.counter-card {
+    background: rgb(225, 195, 23);
+    color: #1A1A2E;
+    border-radius: 10px;
+    padding: 25px 10px;
+    text-align: center;
+}
+
+.counter-card h3 {
+    font-size: 38px;
+    margin: 0;
+    font-weight: bold;
+}
+
+/* ---------------- ARTICLES ---------------- */
+.articles {
+    padding: 80px 20px;
+}
+
+.articles h2 {
+    text-align: center;
+    font-size: 36px;
+    color: #E4A11B;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 30px;
+}
+
+/* CARD */
+.article-card {
+    background: #16213E;
+    border-radius: 15px;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s ease;
+}
+
+.article-card:hover {
+    transform: translateY(-8px);
+}
+
+/* IMAGE */
+.article-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* CONTENT */
+.article-content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+/* TITLE */
+.article-content h3 {
+    color: white;
+    font-size: 22px;
+    min-height: 60px;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* BUTTON */
+.article-content button {
+    padding: 10px 22px;
+    background: #E4A11B;
+    color: #1A1A2E;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.article-content button:hover {
+    background: #D19715;
+}
+
+/* ---------------- FOOTER ---------------- */
+.footer {
+    padding: 80px 20px;
+    background: #16213E;
+}
+
+.footer-left h3 {
+    color: #E4A11B;
+    font-family: 'Playfair Display', serif;
+}
+
+.footer-left p {
+    color: rgb(231, 180, 53);
+}
+
+.footer .icons i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.map-preview {
+    width: 100%;
+    max-width: 400px;
+    height: 250px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    transition: 0.3s ease;
+}
+
+.map-preview:hover {
+    transform: scale(1.03);
+}
+
+.map-preview iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px;
+    background: #0F0F0F;
+    color: rgb(231, 180, 53);
+}
+
+/* ---------------- SCROLL ANIMATIONS ---------------- */
+.animate {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+
+.animate.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ---------------- MOBILE RESPONSIVE ---------------- */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .opening-section {
+        text-align: center;
+    }
+
+    .articles {
+        padding: 50px 10px;
+    }
+}
+.animate {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+
+.animate.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
