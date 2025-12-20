@@ -41,7 +41,7 @@
 }
 /*-------------Events-into------------------ */
 .event-intro{
-    background-color:  linear-gradient(rgba(45,45,91,0.7), rgba(45,45,91,0.7)),
+    background:  linear-gradient(rgba(45,45,91,0.7), rgba(45,45,91,0.7)),
     url('../images/events.jpg');
     background-position: center ;
     background-size: cover;
