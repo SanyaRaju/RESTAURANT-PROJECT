@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanya_Raju_Cuisine</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../Bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/books.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container nav-container">
+            
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="../images/logo sr.jpg" class="logo-img">
+                <h2 class="brand ms-2">Sanya's Royal Multi-Cuisine</h2>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#menuBar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menuBar">
+                <ul class="navbar-nav ms-auto gap-3">
+                    <li class="nav-item"><a class="nav-link" href="../HTML/index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../HTML/books.html">Book Table</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../HTML/events.html">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Preorder</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Cakes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Offers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../HTML/about.html">About us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+
+                <button class="login-btn ms-3">Login</button>
+            </div>
+        </div>
+    </nav>
+    <!-- BOOK INTRO -->
+<section class="book-hero animate zoom-in">
+    <div class="overlay"></div>
+    <div class="content text-center">
+        <h1>Book a Table</h1>
+        <p>Reserve your seat at Sanya's Royal Multi-Cuisine</p>
+    </div>
+</section>
+
+<!-- BOOK SECTION -->
+<section class="book-section">
+    <div class="container-fluid">
+        <div class="row">
+
+            <!-- LEFT SIDE -->
+            <div class="col-lg-7 left-section animate fade-left">
+                <h2>Select Your Table</h2>
+                <p>Main Dining Area – Top View</p>
+
+                <div class="tables-grid">
+                    <div class="table-box available" data-seats="2">2<br>Seats</div>
+                    <div class="table-box available" data-seats="2">2<br>Seats</div>
+                    <div class="table-box available" data-seats="4">4<br>Seats</div>
+                    <div class="table-box booked">4<br>Seats</div>
+                    <div class="table-box vip" data-seats="6">VIP<br>6</div>
+                    <div class="table-box available" data-seats="6">6<br>Seats</div>
+                </div>
+
+                <p id="seatMessage" class="mt-3 text-warning fw-bold"></p>
+
+                <div class="legend">
+                    <span class="available-box"></span> Available
+                    <span class="booked-box"></span> Booked
+                    <span class="selected-box"></span> Selected
+                    <span class="vip-box"></span> VIP
+                </div>
+            </div>
+
+            <!-- RIGHT SIDE -->
+            <div class="col-lg-5 right-section animate fade-right">
+                <h2>Booking Details</h2>
+
+                <label>Date</label>
+                <input type="date" class="form-control">
+
+                <label>Time</label>
+                <input type="time" class="form-control">
+
+                <label>Guests</label>
+                <input type="number" id="guests" class="form-control" value="2">
+
+                <label>Special Requests</label>
+                <textarea class="form-control"></textarea>
+
+                <h4 class="total">Total ₹2000</h4>
+
+                <button class="btn btn-gold">Login to Continue</button>
+            </div>
+
+        </div>
+    </div>
+</section>
+<script src="../Bootstrap/js/bootstrap.min.js"></script>
+<script src="../JavaScript/books.js"></script>
+</body>
+</html>

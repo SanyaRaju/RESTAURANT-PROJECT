@@ -1,0 +1,203 @@
+/* ---------------- NAVBAR ---------------- */
+.navbar {
+    padding: 15px 0;
+    background-color: #1A1A2E;
+}
+
+.logo-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.brand {
+    color: #E4A11B;
+    font-family: "Playfair Display", serif;
+    font-size: 22px;
+}
+
+.navbar-nav .nav-link {
+    color: #FFFFFF;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #E4A11B;
+}
+
+.login-btn {
+    background-color: #E4A11B;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    color: #1A1A2E;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #D19715;
+}
+/*-------------books-into------------------ */
+body {
+    background: #0b0e23;
+    color: #fff;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* HERO */
+.book-hero {
+    height: 70vh;
+    background: url("../images/books.jpg") center/cover no-repeat;
+    position: relative;
+}
+
+.book-hero .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,.6);
+}
+
+.book-hero .content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.book-hero h1 {
+    font-size: 60px;
+    color: #d4a017;
+}
+
+/* BOOK SECTION */
+.book-section {
+    padding: 80px 40px;
+}
+
+/* LEFT & RIGHT */
+.left-section,
+.right-section {
+    padding: 40px;
+    border: 2px solid #d4a017;
+    border-radius: 12px;
+    background: rgba(0,0,0,0.75);
+}
+
+/* TABLE GRID */
+.tables-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.table-box {
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* STATES */
+.available { background: #1f8f3a; }
+.booked { background: #a83232; cursor: not-allowed; }
+.vip { background: #d4a017; color: #000; }
+
+.selected {
+    box-shadow: 0 0 15px #d4a017;
+    transform: scale(1.1);
+}
+
+/* LEGEND */
+.legend span {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+}
+
+.available-box { background: #1f8f3a; }
+.booked-box { background: #a83232; }
+.selected-box { background: #d4a017; }
+.vip-box { background: #d4a017; }
+
+/* FORM */
+.right-section input,
+.right-section textarea {
+    margin-bottom: 15px;
+}
+
+/* BUTTON */
+.btn-gold {
+    background: #d4a017;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    font-weight: bold;
+}
+/* ===== ANIMATIONS  ===== */
+
+.animate {
+    opacity: 0;
+    transform: translateY(80px);
+    transition: all 1s ease;
+}
+
+.animate.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Direction animations */
+.fade-left {
+    transform: translateX(-120px);
+}
+
+.fade-right {
+    transform: translateX(120px);
+}
+
+.fade-left.show,
+.fade-right.show {
+    transform: translateX(0);
+}
+/* ===== TABLE INTERACTION ANIMATIONS ===== */
+
+.table-box {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.table-box.available:hover {
+    transform: scale(1.12);
+    box-shadow: 0 0 20px rgba(212,160,23,0.9);
+}
+
+/* Selected table */
+.table-box.selected {
+    background: #d4a017 !important;
+    color: #000;
+    transform: scale(1.15);
+    box-shadow: 0 0 30px rgba(212,160,23,1);
+}
+
+/* Booked table animation */
+.table-box.booked {
+    opacity: 0.6;
+}
+
+/* Click pulse animation */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+.table-box.pulse {
+    animation: pulse 0.4s ease;
+}
