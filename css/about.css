@@ -245,8 +245,17 @@ body {
     transform: translateY(0) scale(1);
 }
 .footer-bottom {
-    text-align: center;
     padding: 20px;
     background: #0F0F0F;
+}
+
+.footer-link {
     color: rgb(231, 180, 53);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer-link:hover {
+    color: rgb(255, 200, 80);
+    text-decoration: underline;
 }

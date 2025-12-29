@@ -201,3 +201,18 @@ body {
 .table-box.pulse {
     animation: pulse 0.4s ease;
 }
+.footer-bottom {
+    padding: 20px;
+    background: #0F0F0F;
+}
+
+.footer-link {
+    color: rgb(231, 180, 53);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer-link:hover {
+    color: rgb(255, 200, 80);
+    text-decoration: underline;
+}
