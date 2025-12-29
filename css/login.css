@@ -1,0 +1,73 @@
+/* Page Background */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #1d2671, #c33764);
+    height: 100vh;
+}
+
+/* Wrapper */
+.login-wrapper {
+    height: 100vh;
+}
+
+/* Login Card */
+.login-card {
+    background: #fff;
+    padding: 35px;
+    width: 100%;
+    max-width: 420px;
+    border-radius: 15px;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Headings */
+.login-card h2 {
+    font-weight: 700;
+    color: #333;
+}
+
+/* Inputs */
+.form-control {
+    border-radius: 8px;
+    padding: 10px;
+}
+
+/* Login Button */
+.btn-login {
+    background: #c33764;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn-login:hover {
+    background: #1d2671;
+    color: #fff;
+}
+
+/* Links */
+.forgot,
+.register-link {
+    text-decoration: none;
+    color: #c33764;
+    font-weight: 500;
+}
+
+.forgot:hover,
+.register-link:hover {
+    text-decoration: underline;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

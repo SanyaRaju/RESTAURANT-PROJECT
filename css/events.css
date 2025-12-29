@@ -27,18 +27,20 @@
 }
 
 .login-btn {
-    background-color: #E4A11B;
-    border: none;
-    padding: 8px 20px;
-    border-radius: 20px;
-    color: #1A1A2E;
-    font-weight: bold;
-    transition: 0.3s;
+    background-color: #E4A11B !important;
+    border: none !important;
+    padding: 8px 20px !important;
+    border-radius: 20px !important;
+    color: #1A1A2E !important;
+    font-weight: bold !important;
+    transition: 0.3s !important;
 }
 
 .login-btn:hover {
-    background-color: #D19715;
+    background-color: #D19715 !important;
 }
+
+
 /*-------------Events-into------------------ */
 .event-intro{
     background:  linear-gradient(rgba(45,45,91,0.7), rgba(45,45,91,0.7)),

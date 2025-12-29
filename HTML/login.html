@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="../Bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+
+<div class="login-wrapper d-flex justify-content-center align-items-center">
+    <div class="login-card shadow-lg">
+        <h2 class="text-center mb-4">Welcome Back</h2>
+
+        <form>
+            <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" placeholder="Enter email" required>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Password</label>
+                <input type="password" class="form-control" placeholder="Enter password" required>
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox">
+                    <label class="form-check-label">Remember me</label>
+                </div>
+                <a href="#" class="forgot">Forgot password?</a>
+            </div>
+
+            <a href="../HTML/index.html" class="btn btn-login w-100">Login</a>
+
+            <p class="text-center mt-3">
+                Don’t have an account?
+                <a href="#" class="register-link">Register</a>
+            </p>
+        </form>
+    </div>
+</div>
+<script src="../Bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
