@@ -79,19 +79,22 @@ body {
     color: #E4A11B;
 }
 
-.hero-buttons button {
+.hero-btn {
     padding: 14px 30px;
     background: #E4A11B;
-    border: none;
     border-radius: 8px;
     color: #1A1A2E;
     font-weight: bold;
+    text-decoration: none;   
+    display: inline-block;   
     cursor: pointer;
-    transition: 0.3s;
+    transition: all 0.3s ease;
 }
 
-.hero-buttons button:hover {
+.hero-btn:hover {
     background: #D19715;
+    color: #1A1A2E;
+    text-decoration: none;   
 }
 
 /* ---------------- OPENING HOURS ---------------- */
