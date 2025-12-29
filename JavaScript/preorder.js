@@ -3,14 +3,6 @@ document.addEventListener("DOMContentLoaded", () => {
     /* HERO ANIMATION */
     document.querySelector(".hero-animate")?.classList.add("show");
 
-    /* BUTTON STAGGER ANIMATION */
-    const buttons = document.querySelectorAll(".btn-animate");
-    buttons.forEach((btn, index) => {
-        setTimeout(() => {
-            btn.classList.add("show");
-        }, index * 120);
-    });
-
     /* SCROLL ANIMATION FOR CARDS */
     const animatedElements = document.querySelectorAll(".animate");
 
