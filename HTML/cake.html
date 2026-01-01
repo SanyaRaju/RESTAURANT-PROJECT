@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customize Cake</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="../Bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="../css/cake.css">
+</head>
+
+<body>
+
+<!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container nav-container">
+            
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="../images/logo sr.jpg" class="logo-img">
+                <h2 class="brand ms-2">Sanya's Royal Multi-Cuisine</h2>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#menuBar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menuBar">
+                <ul class="navbar-nav ms-auto gap-3">
+                    <li class="nav-item"><a class="nav-link" href="../HTML/index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../HTML/books.html">Book Table</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../HTML/events.html">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../HTML/preorder.html">Preorder</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Cakes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../HTML/offer.html">Offers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../HTML/about.html">About us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../HTML/contact.html">Contact</a></li>
+                </ul>
+
+                <a href="../HTML/login.html" class="btn login-btn ms-3">Login</a>
+            </div>
+        </div>
+    </nav>
+
+<!-- ================= HERO ================= -->
+<section class="hero-section text-center text-white"
+         style="background-image:url('../images/cake.jpg'); background-size:cover;">
+    <div class="container">
+        <h1 class="fw-bold">
+            Customize Your Dream Cake
+            <i class="fa-solid fa-cake-candles text-warning"></i>
+        </h1>
+        <p class="lead">Pick every detail and see your cake come alive</p>
+    </div>
+</section>
+
+<!-- ================= CAKE SHAPE ================= -->
+<section class="container my-5">
+    <h2 class="text-center mb-4">Cake Shape</h2>
+    <div class="row g-4 text-center">
+
+        <div class="col-md-3 cake-card">
+            <img src="../images/round.jpg">
+            <h6>Round</h6>
+            <p>₹100</p>
+            <button class="btn btn-outline-warning add-item" data-price="100">Add</button>
+        </div>
+
+        <div class="col-md-3 cake-card">
+            <img src="../images/square.jpg">
+            <h6>Square</h6>
+            <p>₹120</p>
+            <button class="btn btn-outline-warning add-item" data-price="120">Add</button>
+        </div>
+
+        <div class="col-md-3 cake-card">
+            <img src="../images/rectangle.jpg">
+            <h6>Rectangle</h6>
+            <p>₹100</p>
+            <button class="btn btn-outline-warning add-item" data-price="100">Add</button>
+        </div>
+
+        <div class="col-md-3 cake-card">
+            <img src="../images/heart.jpg">
+            <h6>Heart</h6>
+            <p>₹150</p>
+            <button class="btn btn-outline-warning add-item" data-price="150">Add</button>
+        </div>
+
+    </div>
+</section>
+
+<!-- ================= FLAVORS ================= -->
+<section class="container my-5">
+    <h2 class="text-center mb-4">Flavors</h2>
+    <div class="row g-4 text-center">
+
+        <div class="col-md-3 cake-card">
+            <img src="../images/chocolate.jpg">
+            <h6>Chocolate</h6>
+            <p>₹200</p>
+            <button class="btn btn-outline-warning add-item" data-price="200">Add</button>
+        </div>
+
+        <div class="col-md-3 cake-card">
+            <img src="../images/vanilla.jpg">
+            <h6>Vanilla</h6>
+            <p>₹100</p>
+            <button class="btn btn-outline-warning add-item" data-price="100">Add</button>
+        </div>
+
+        <div class="col-md-3 cake-card">
+            <img src="../images/red velvet flavor.jpg">
+            <h6>Red Velvet</h6>
+            <p>₹150</p>
+            <button class="btn btn-outline-warning add-item" data-price="150">Add</button>
+        </div>
+
+        <div class="col-md-3 cake-card">
+            <img src="../images/butterscotch.jpg">
+            <h6>Butterscotch</h6>
+            <p>₹180</p>
+            <button class="btn btn-outline-warning add-item" data-price="180">Add</button>
+        </div>
+
+    </div>
+</section>
+
+<!-- ================= CREAM ================= -->
+<section class="container my-5">
+    <h2 class="text-center mb-4">Cream</h2>
+    <div class="row g-4 text-center">
+
+        <div class="col-md-4 cake-card">
+            <img src="../images/whipped cream.jpg">
+            <h6>Whipped Cream</h6>
+            <p>₹150</p>
+            <button class="btn btn-outline-warning add-item" data-price="150">Add</button>
+        </div>
+
+        <div class="col-md-4 cake-card">
+            <img src="../images/buttercream.jpg">
+            <h6>Butter Cream</h6>
+            <p>₹200</p>
+            <button class="btn btn-outline-warning add-item" data-price="200">Add</button>
+        </div>
+
+        <div class="col-md-4 cake-card">
+            <img src="../images/ganache.jpg">
+            <h6>Chocolate Ganache</h6>
+            <p>₹250</p>
+            <button class="btn btn-outline-warning add-item" data-price="250">Add</button>
+        </div>
+
+    </div>
+</section>
+
+<!-- ================= TOPPINGS ================= -->
+<section class="container my-5">
+    <h2 class="text-center mb-4">Toppings</h2>
+    <div class="row g-4 text-center">
+
+        <div class="col-md-3 cake-card">
+            <img src="../images/chocochips.jpg">
+            <h6>Choco Chips</h6>
+            <p>₹100</p>
+            <button class="btn btn-outline-warning add-item" data-price="100">Add</button>
+        </div>
+
+        <div class="col-md-3 cake-card">
+            <img src="../images/fruits.jpg">
+            <h6>Fresh Fruits</h6>
+            <p>₹200</p>
+            <button class="btn btn-outline-warning add-item" data-price="200">Add</button>
+        </div>
+
+        <div class="col-md-3 cake-card">
+            <img src="../images/nuts.jpg">
+            <h6>Nuts</h6>
+            <p>₹150</p>
+            <button class="btn btn-outline-warning add-item" data-price="150">Add</button>
+        </div>
+
+        <div class="col-md-3 cake-card">
+            <img src="../images/sprinkles.jpg">
+            <h6>Sprinkles</h6>
+            <p>₹80</p>
+            <button class="btn btn-outline-warning add-item" data-price="80">Add</button>
+        </div>
+
+    </div>
+</section>
+
+<!-- ================= CAKE TIERS ================= -->
+<section class="container my-5">
+    <h2 class="text-center mb-4">Cake Tiers</h2>
+    <div class="row g-4 text-center">
+
+        <div class="col-md-4 cake-card">
+            <img src="../images/1 tier.jpg">
+            <h6>1 Tier</h6>
+            <p>₹100</p>
+            <button class="btn btn-outline-warning add-item" data-price="100">Add</button>
+        </div>
+
+        <div class="col-md-4 cake-card">
+            <img src="../images/2 tier.jpg">
+            <h6>2 Tiers</h6>
+            <p>₹200</p>
+            <button class="btn btn-outline-warning add-item" data-price="200">Add</button>
+        </div>
+
+        <div class="col-md-4 cake-card">
+            <img src="../images/3 tier.jpg">
+            <h6>3 Tiers</h6>
+            <p>₹300</p>
+            <button class="btn btn-outline-warning add-item" data-price="300">Add</button>
+        </div>
+
+    </div>
+</section>
+
+<!-- ================= PHOTO UPLOAD ================= -->
+<section class="container my-5 text-center">
+    <h2>Photo Cake Upload</h2>
+    <p>Print your image on cake</p>
+    <p class="fw-bold">₹200</p>
+    <button class="btn btn-outline-warning add-item" data-price="200">Add</button>
+    <input type="file" class="form-control w-50 mx-auto mt-3">
+</section>
+
+<!-- ================= VIDEO PREVIEW ================= -->
+<section class="container my-5 text-center">
+    <h2>How Your Cake Will Look 🎥</h2>
+    <video width="70%" controls>
+        <source src="../videos/cake-preview.mp4" type="video/mp4">
+    </video>
+</section>
+
+<!-- ================= TOTAL ================= -->
+<section class="container my-5 text-center">
+    <h2>Total Amount</h2>
+    <h1>₹ <span id="totalAmount">0</span></h1>
+    <button class="btn btn-warning btn-lg mt-3">Pay Now</button>
+</section>
+
+<!-- Bootstrap JS -->
+<script src="../Bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom JS -->
+<script src="../JavaScript/cake.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,230 @@
+/* ================= GLOBAL ================= */
+body {
+    font-family: "Segoe UI", sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+section {
+    padding: 50px 0;
+}
+
+/* ================= HEADINGS ================= */
+h1, h2 {
+    font-weight: 700;
+    color: #E4A11B;
+}
+
+h6 {
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+/* ================= PRICE TEXT ================= */
+.price {
+    font-weight: 700;
+    color: #e60000;
+    margin-bottom: 10px;
+}
+
+/* ---------------- NAVBAR ---------------- */
+.navbar {
+    padding: 15px 0;
+    background-color: #1A1A2E;
+}
+
+.logo-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.brand {
+    color: #E4A11B;
+    font-family: "Playfair Display", serif;
+    font-size: 22px;
+}
+
+.navbar-nav .nav-link {
+    color: #FFFFFF;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #E4A11B;
+}
+
+.login-btn {
+    background-color: #E4A11B;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    color: #1A1A2E;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #D19715;
+}
+
+/* ================= HERO SECTION ================= */
+.hero-section {
+    position: relative;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-section p {
+    color: #fff;
+    font-weight: 400;
+}
+
+/* ================= ITEM CARDS ================= */
+.cake-card {
+    text-align: center;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+/* ================= CAKE IMAGES ================= */
+.cake-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 16px;
+    border: 3px solid #E4A11B;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer;
+}
+
+.cake-card img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 15px 30px rgba(228, 161, 27, 0.4);
+}
+
+/* ================= ADD BUTTON ================= */
+.add-item {
+    border-radius: 30px;
+    padding: 6px 22px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.add-item:hover {
+    background-color: #f4b400;
+    color: #000;
+    transform: translateY(-2px);
+}
+
+/* ================= SELECTED ITEM ================= */
+.cake-card.selected img {
+    box-shadow: 0 0 25px rgba(228, 161, 27, 0.9);
+    transform: scale(1.05);
+}
+
+/* ================= PHOTO UPLOAD ================= */
+input[type="file"] {
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* ================= VIDEO PREVIEW ================= */
+video {
+    width: 70%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* ================= TOTAL SECTION ================= */
+#totalAmount {
+    color: #ff3b3b;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+button.btn-warning {
+    padding: 12px 40px;
+    font-size: 18px;
+    border-radius: 40px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+    transition: all 0.3s ease;
+}
+
+button.btn-warning:hover {
+    transform: scale(1.05);
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+    .hero-section {
+        min-height: 60vh;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .cake-card img {
+        height: 200px;
+    }
+
+    video {
+        width: 100%;
+        height: 260px;
+    }
+
+    .brand {
+        font-size: 16px;
+    }
+}
+/* ===== BUTTON POP ===== */
+.btn-pop {
+    animation: pop 0.3s ease;
+}
+
+@keyframes pop {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.15); }
+    100% { transform: scale(1); }
+}
+
+/* ===== CARD PULSE ===== */
+.card-pulse {
+    animation: pulse 0.5s ease;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.04); }
+    100% { transform: scale(1); }
+}
+
+/* ===== TOTAL BOUNCE ===== */
+.total-bounce {
+    animation: bounce 0.4s ease;
+}
+
+@keyframes bounce {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
